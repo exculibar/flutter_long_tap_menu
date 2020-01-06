@@ -78,7 +78,8 @@ class MenuState extends State<Menu> {
 
   void defaultShowItem() {
     var rect = UIHelper.findGlobalRect(key);
-    showItem(rect);
+    //showItem(rect);
+    showItem(Rect.fromLTRB(rect.left, rect.top - 40, rect.right, rect.bottom));
   }
 
   OverlayEntry itemEntry;
